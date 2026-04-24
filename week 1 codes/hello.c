@@ -12,7 +12,7 @@ int main(void)
     scanf("%s", &color);
     printf("your favorite color is %s!\n", color);
 
-    int age[50];
+    int age;
     printf("Enter your age: ");
     scanf("%d", &age);
     printf("your age is %d!\n", age);
