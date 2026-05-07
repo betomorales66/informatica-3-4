@@ -18,8 +18,11 @@ int main(void)
     int end_h = start_h + hours;
     int end_m = start_m + min;
 
-
+    if (end_m >=60) {
+        end_h = end_h + (end_m / 60);
+        end_m = end_m % 60;
+    }
 
     printf("the movie will last %d hr and %d min.\n", hours, min);
-    printf("end time: %d:%d \n", end_h, end_m);
+    printf("end time: %d:%02d \n", end_h, end_m);
 }
